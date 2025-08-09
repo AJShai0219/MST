@@ -1,0 +1,72 @@
+/* App.css */
+body {
+  background-color: #f0f2f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ant-layout-header {
+  background: #1e3a8a;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+  background: linear-gradient(135deg, #4481eb 0%, #04befe 100%);
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo::before {
+  content: "RF";
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ant-menu-item a {
+  font-size: 16px;
+}
+
+.ant-menu-item-selected {
+  background-color: #e6f7ff !important;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #555;
+}
+
+.request-page .ant-input:focus,
+.request-page .ant-input:hover,
+.charts-page .ant-radio-button-wrapper:hover {
+  box-shadow: 0 0 5px rgba(24, 144, 255, 0.3);
+}
+
+/* 卡片内容样式 */
+.ant-card-body p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    max-width: 120px !important;
+    min-width: 120px !important;
+    width: 120px !important;
+  }
+}
